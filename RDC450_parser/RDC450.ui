@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1060</width>
+    <height>820</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1060</width>
+    <height>820</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1060</width>
+    <height>820</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>RDC450_parser</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="BasicData">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>771</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>BasicData</string>
+    </property>
+    <widget class="QLabel" name="RDCN_label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>130</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>RDCN</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="RDCN_clear_Button">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>30</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="RDCNRec_label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>130</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>RDCNRec</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="RDCNRec_clear_Button">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>70</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="RDCNRec_Edit">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>70</y>
+       <width>480</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="EngineType_label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>110</y>
+       <width>130</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>EngineType</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="EngineType_clear_Button">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>110</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="EngineType_Edit">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>110</y>
+       <width>480</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="EngineN_label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>150</y>
+       <width>130</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>EngineN</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="EngineN_clear_Button">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>150</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="EngineN_Edit">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>150</y>
+       <width>480</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="User_label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>190</y>
+       <width>130</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>User</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="User_clear_Button">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>190</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="User_Edit">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>190</y>
+       <width>480</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Logged_label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>230</y>
+       <width>130</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Logged</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Logged_clear_Button">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>230</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Logged_Edit">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>230</y>
+       <width>480</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Comment_label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>270</y>
+       <width>130</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Comment</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Comment_clear_Button">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>270</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Comment_Edit">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>270</y>
+       <width>480</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ND450N_label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>310</y>
+       <width>130</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ND450N</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ND450N_clear_Butto">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>310</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ND450N_Edit">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>310</y>
+       <width>480</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="RDCN_Edit">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>30</y>
+       <width>480</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="FlyData">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>390</y>
+      <width>771</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>FlyData</string>
+    </property>
+    <widget class="QLineEdit" name="FlightN_Edit">
+     <property name="geometry">
+      <rect>
+       <x>179</x>
+       <y>30</y>
+       <width>461</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="FlightN_clear_Button">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>30</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="FlightN_label">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>30</y>
+       <width>170</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>FlightN</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="APTakeOf_Edit">
+     <property name="geometry">
+      <rect>
+       <x>179</x>
+       <y>70</y>
+       <width>461</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="APTakeOf_label">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>70</y>
+       <width>170</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>APTakeOf</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="APTakeOf_clear_Button">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>70</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="APArrive_Edit">
+     <property name="geometry">
+      <rect>
+       <x>179</x>
+       <y>110</y>
+       <width>461</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="APArrive_label">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>110</y>
+       <width>170</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>APArrive</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="APArrive_clear_Button">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>110</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="FlightStartTime_label">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>190</y>
+       <width>170</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>FlightStartTime</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FlightDate_Edit">
+     <property name="geometry">
+      <rect>
+       <x>179</x>
+       <y>150</y>
+       <width>461</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="BoardN_clear_Button">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>230</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FlightStartTime_Edit">
+     <property name="geometry">
+      <rect>
+       <x>179</x>
+       <y>190</y>
+       <width>461</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="BoardN_Edit">
+     <property name="geometry">
+      <rect>
+       <x>179</x>
+       <y>230</y>
+       <width>461</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="FlightDate_label">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>150</y>
+       <width>170</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>FlightDate</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="FlightStartTime_clear_Button">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>190</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="BoardN_label">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>230</y>
+       <width>170</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>BoardN</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="FlightDate_clear_Button">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>150</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Type_label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>270</y>
+       <width>170</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Type</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Type_clear_Button">
+     <property name="geometry">
+      <rect>
+       <x>661</x>
+       <y>270</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Type_Edit">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>270</y>
+       <width>461</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="Config">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>730</y>
+      <width>771</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Config</string>
+    </property>
+    <widget class="QPushButton" name="ShowFlightWin_clear_Button">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>30</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ShowFlightWin_label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>160</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ShowFlightWin</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ShowFlightWin_Edit">
+     <property name="geometry">
+      <rect>
+       <x>199</x>
+       <y>30</y>
+       <width>451</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="Save_Button">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>310</y>
+      <width>140</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>SAVE</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="OpenFile_Button">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>30</y>
+      <width>140</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Open File</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="UpdateData_Button">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>170</y>
+      <width>241</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Обновить данные</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>ND450N_clear_Butto</sender>
+   <signal>clicked()</signal>
+   <receiver>ND450N_Edit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>689</x>
+     <y>387</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>617</x>
+     <y>385</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Comment_clear_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Comment_Edit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>695</x>
+     <y>342</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>569</x>
+     <y>345</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Logged_clear_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Logged_Edit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>704</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>630</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>User_clear_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>User_Edit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>719</x>
+     <y>261</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>557</x>
+     <y>265</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>EngineN_clear_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>EngineN_Edit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>706</x>
+     <y>223</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>605</x>
+     <y>224</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RDCNRec_clear_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>RDCNRec_Edit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>703</x>
+     <y>142</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>544</x>
+     <y>145</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RDCN_clear_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>RDCN_Edit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>704</x>
+     <y>106</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>564</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Type_clear_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Type_Edit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>695</x>
+     <y>712</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>553</x>
+     <y>714</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BoardN_clear_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>BoardN_Edit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>695</x>
+     <y>672</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>513</x>
+     <y>676</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FlightStartTime_clear_Button</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>FlightStartTime_Edit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>690</x>
+     <y>635</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>567</x>
+     <y>636</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FlightDate_clear_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>FlightDate_Edit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>696</x>
+     <y>590</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>599</x>
+     <y>596</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>APArrive_clear_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>APArrive_Edit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>677</x>
+     <y>551</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>517</x>
+     <y>556</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>APTakeOf_clear_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>APTakeOf_Edit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>689</x>
+     <y>512</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>565</x>
+     <y>515</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FlightN_clear_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>FlightN_Edit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>701</x>
+     <y>467</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>576</x>
+     <y>475</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ShowFlightWin_clear_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>ShowFlightWin_Edit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>697</x>
+     <y>815</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>620</x>
+     <y>815</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>EngineType_clear_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>EngineType_Edit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>704</x>
+     <y>184</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>569</x>
+     <y>185</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
